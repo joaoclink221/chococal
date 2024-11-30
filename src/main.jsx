@@ -1,10 +1,21 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { BrowserRouter as Router, Route, Routes,  } from 'react-router-dom';
 import './index.css'
 import App from './App.jsx'
+import Sobre from "./sections/sobre/Sobre.jsx"
+import Contato from "./sections/contatos/Contato.jsx"
+import Chocolates from "./sections/chocolates/Chocolates.jsx"
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <Router>
+      <Routes>
+        <Route path='/' element = {<App />}/>
+        <Route path='/sobre' element = {<Sobre />}/>
+        <Route path='/contato' element = {<Contato />}/>
+        <Route path='/chocolate' element = {<Chocolates />}/>
+      </Routes>
+    </Router>
   </StrictMode>,
 )
