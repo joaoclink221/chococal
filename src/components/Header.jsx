@@ -1,18 +1,24 @@
-import logo from "../assets/images/logo.png"; 
+
+import logo from "../assets/images/logo.png";
 import "./Header.scss";
 import { navigation } from "../constants";
 
-const Header = () => {
+const Header = ({ scrollToInicio, scrollToSobre }) => {
   return (
     <div className="Header">
-        <img src={logo} width={180} height={85} alt="Logo" className="logo" />
+      <img src={logo} width={180} height={85} alt="Logo" className="logo" />
       <div className="body-header">
         {navigation.map((item) => (
           <button
             className="Buttons"
             key={item.id}
-            href={item.url}
-            onClick={item.onClickbad}
+            onClick={
+              item.title === "inicio"
+                ? scrollToInicio
+                : item.title === "sobre"
+                ? scrollToSobre
+                : null
+            }
           >
             {item.title}
             <span className="gradient-underline"></span>

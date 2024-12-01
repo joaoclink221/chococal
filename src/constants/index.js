@@ -2,21 +2,21 @@ export const navigation = [
     {
       id: "0",
       title: "inicio",
-      url: "#inicio",
+      onClick: "scrollToInicio",
     },
     {
       id: "1",
       title: "sobre",
-      url: "#sobre",
+      onClick: "scrollToSobre",
     },
     {
       id: "2",
       title: "Chocolates",
-      url: "#chocolates",
+      onClick: "scrollToChocolates",
     },
     {
       id: "3",
       title: "Contatos",
-      url: "#contatos",
+      onClick: "scrollToContatos",
     }
   ];
