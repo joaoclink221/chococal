@@ -1,0 +1,59 @@
+.inicio2 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.fundo2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    object-fit: cover;
+}
+
+.nnsei2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    margin-right: 4rem;
+    z-index: 1;
+    padding-top: 10%;
+}
+.texts{
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    
+}
+
+.nnsei2 img {
+    width: 35%;
+    object-fit: cover;
+    margin-right: 2rem;
+    
+}
+
+.title2 {
+    color: #754632;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.text-introduction2 {
+    font-size: 1.2rem;
+    font-family: Roboto;
+    font-weight: 300;
+    padding-bottom: 1.5rem;
+    text-align: left;
+}

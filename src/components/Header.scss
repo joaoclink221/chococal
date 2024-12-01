@@ -5,12 +5,13 @@
     width: 100%;
     height: 3rem;
     box-sizing: border-box;
-    z-index: 1000; 
-    background-color: #2A140A;
+    z-index: 50; 
+    background-color: #2a140a;
     display: flex;
     align-items: center;
     justify-content: space-between; 
     padding: 0 1rem; 
+    
 }
 
 .body-header {

@@ -1,0 +1,42 @@
+.inicio{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.fundo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    object-fit: cover;
+}
+.nnsei{
+    display: block;
+    width: 45rem;
+    position: relative;
+    text-align: left;
+    margin-left: 4rem;
+    z-index: 1;
+    padding-top: 20%;
+}
+.title{
+    font-size: 3rem;
+    font-family: Roboto;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+.chococal-text {
+    color: #754632;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+    font-weight: 400;
+  }
+
+.text-introduction{
+    font-size: 1.2rem;
+    font-family: Roboto;
+    font-weight: 300;
+}

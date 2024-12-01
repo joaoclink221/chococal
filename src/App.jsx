@@ -1,9 +1,13 @@
+import Inicio from "./sections/inicio/Inicio"
 import Header from "./components/Header"
+import Sobre from "./sections/sobre/Sobre"
 const App = () => {
   return (
-    <section>
+    <div className="landing">
       <Header/>
-    </section>
+      <Inicio/>
+      <Sobre/>
+    </div>
   )
 }
 
