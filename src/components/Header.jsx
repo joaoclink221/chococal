@@ -1,11 +1,15 @@
+import logo from "../assets/images/logo.png"; 
+import "./Header.scss";
 import { navigation } from "../constants";
+
 const Header = () => {
   return (
-    <div className="header">
-      <div>
+    <div className="Header">
+        <img src={logo} width={180} height={85} alt="Logo" className="logo" />
+      <div className="body-header">
         {navigation.map((item) => (
           <button
-            className="buttons"
+            className="Buttons"
             key={item.id}
             href={item.url}
             onClick={item.onClickbad}
