@@ -11,7 +11,7 @@ import 'swiper/css/scrollbar'
 
 const Chocolates = () => {
 
-  const [SlidesPerView, SetSlidePerview] = useState(1)
+  const [SlidesPerView,] = useState(1)
 
   const minguel = [
     <img src={choco1} alt="choco1" className="choco1" />,
