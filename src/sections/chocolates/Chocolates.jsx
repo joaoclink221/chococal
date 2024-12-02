@@ -6,7 +6,7 @@ import BrancoCard from '../../components/cards/choco-branco'
 
 export default function chocolate(){
             
-    const minguel = [ChocolateCard, BrancoCard, AmargoCard]
+    const minguel = components [ChocolateCard, BrancoCard, AmargoCard]
     
     return(
         <div className="cria">
@@ -16,10 +16,10 @@ export default function chocolate(){
             pagination = {{clickable: true}}
             navigation
             >
-                {minguel.map( (item) => (
-                       <SwiperSlide>
+                {minguel.map( (item, index) => (
+                       <SwiperSlide key = {index}>
                             <img 
-                            src={item.minguel} 
+                            src={item.components} 
                             alt="slide"
                             className='slide-minguel' />
                        </SwiperSlide>
