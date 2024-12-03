@@ -2,7 +2,7 @@ import { useRef } from "react";
 import Inicio from "./sections/inicio/Inicio";
 import Header from "./components/Header";
 import Sobre from "./sections/sobre/Sobre";
-
+import Chocolate from "./sections/chocolates/Chocolates";
 
 
 
@@ -31,8 +31,7 @@ const App = () => {
       <div ref={sectionRef2}>
         <Sobre />
       </div>
-
-  
+      <Chocolate/>
     </div>
 
   );
