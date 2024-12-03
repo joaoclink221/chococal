@@ -13,6 +13,7 @@ export default function Chocolate() {
 
     return (
         <div className="cria">
+           
             <Swiper
                 slidesPerView={1}  
                 pagination={{ clickable: true }}
