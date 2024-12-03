@@ -2,6 +2,7 @@
 import logo from "../assets/images/logo.png";
 import "./Header.scss";
 import { navigation } from "../constants";
+import { Link } from "react-router-dom";
 
 const Header = ({ scrollToInicio, scrollToSobre }) => {
   return (
@@ -17,6 +18,8 @@ const Header = ({ scrollToInicio, scrollToSobre }) => {
                 ? scrollToInicio
                 : item.title === "sobre"
                 ? scrollToSobre
+                : item.title === "Chocolates"
+                ? <Link to="/chocolate"/>
                 : null
             }
           >
