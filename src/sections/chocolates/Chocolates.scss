@@ -1,11 +1,28 @@
-.cria{
-    width: 100%;
-    max-width: 1440px;
-    margin: 0;
+.cria {
+    width:90%;
+    max-width: 1400px;
+    object-fit: cover;
+    padding: 70px;
 }
 
-.slide-minguel{
-    width: 80%;
-    height: 300px;
-    object-fit: cover;
+.slide-minguel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: white !important;  
+}
+
+
+.swiper-pagination-bullet {
+    background-color: white !important;  
+}
+
+
+.swiper-pagination-bullet-active {
+    background-color: white !important;  
 }
