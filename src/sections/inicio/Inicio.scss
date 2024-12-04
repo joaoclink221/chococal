@@ -1,162 +1,119 @@
-// .inicio{
-//     position: relative;
-//     width: 100%;
-//     height: 100vh;
-//     overflow: hidden;
-// }
-// .fundo{
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     z-index: 1;
-//     object-fit: cover;
-// }
-// .nnsei{
-//     display: block;
-//     width: 45rem;
-//     position: relative;
-//     text-align: left;
-//     margin-left: 4rem;
-//     z-index: 1;
-//     padding-top: 20%;
-// }
-// .title{
-//     font-size: 3rem;
-//     font-family: Roboto;
-//     font-weight: 300;
-//     margin-bottom: 1rem;
-// }
-// .chococal-text {
-//     color: #754632;
-//     font-family: 'Dancing Script', cursive;
-//     font-size: 3.5rem;
-//     font-weight: 400;
-//   }
-
-// .text-introduction{
-//     font-size: 1.2rem;
-//     font-family: Roboto;
-//     font-weight: 300;
-// }
-
-.inicio{
+.inicio {
   position: relative;
   width: 100%;
   height: 100vh;
-  overflow-x: hidden; /* Adicionado */
-  overflow-y: hidden;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.fundo{
-  position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    object-fit: cover;
-    object-position: center;
-    overflow: hidden; 
-}
-.nnsei{
-    display: block;
-    width: 45rem;
-    position: relative;
-    text-align: left;
-    margin-left: 4rem;
-    z-index: 1;
-    padding-top: 20%;
-}
-.title{
-    font-size: 3rem;
-    font-family: Roboto;
-    font-weight: 300;
-    margin-bottom: 1rem;
-}
-.chococal-text {
-    color: #754632;
-    font-family: 'Dancing Script', cursive;
-    font-size: 3.5rem;
-    font-weight: 400;
-  }
-.text-introduction{
-    font-size: 1.2rem;
-    font-family: Roboto;
-    font-weight: 300;
-}
-  /* Media Queries para responsividade */
-  @media (max-width: 1024px) {
-    .fundo {
-      object-position: center;
-    }
-  
-    .nnsei {
-      width: 35rem;
-      margin-left: 2rem;
-      padding-top: 10%; /* Reduzido padding-top para melhorar o layout em telas menores */
-      max-width: 90%; /* Limita a largura máxima em telas menores */
-    }
-  
-    .title {
-      font-size: 2.5rem;
-    }
-  
-    .chococal-text {
-      font-size: 3rem;
-    }
-  
-    .text-introduction {
-      font-size: 1rem;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .fundo {
-      object-position: top center;
-    }
-  
-    .nnsei {
-      width: 100%;
-      margin-left: 1rem;
-      padding-top: 8%; /* Ajustado para não criar muito espaço no topo */
-    }
-  
-    .title {
-      font-size: 2rem;
-    }
-  
-    .chococal-text {
-      font-size: 2.5rem;
-    }
-  
-    .text-introduction {
-      font-size: 0.9rem;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .fundo {
-      object-position: top center;
-    }
-  
-    .nnsei {
-      width: 100%;
-      margin-left: 0;
-      padding-top: 5%; /* Reduzido para ocupar melhor o espaço */
-    }
-  
-    .title {
-      font-size: 1.8rem;
-    }
-  
-    .chococal-text {
-      font-size: 2rem;
-    }
-  
-    .text-introduction {
-      font-size: 0.8rem;
-    }
-  }
-  
 
+.fundo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  object-fit: cover;
+  object-position: center;
+}
+
+.nnsei {
+  position: relative;
+  text-align: left;
+  margin: 0 4rem;
+  z-index: 2;
+  max-width: 45rem;
+  padding: 2rem;
+
+  border-radius: 8px;
+}
+
+.title {
+  font-size: 3rem;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.chococal-text {
+  color: #754632;
+  font-family: 'Dancing Script', cursive;
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
+.text-introduction {
+  font-size: 1.2rem;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .nnsei {
+    margin: 0 2rem;
+    max-width: 90%;
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .chococal-text {
+    font-size: 3rem;
+  }
+
+  .text-introduction {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .inicio {
+    align-items: flex-start;
+    padding-top: 4rem;
+  }
+
+  .nnsei {
+    margin: 0 1rem;
+    max-width: 100%;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .chococal-text {
+    font-size: 2.5rem;
+  }
+
+  .text-introduction {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nnsei {
+    margin: 0 1rem;
+    padding: 1rem;
+    text-align: center;
+   
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .chococal-text {
+    font-size: 2rem;
+  }
+
+  .text-introduction {
+    font-size: 0.8rem;
+  }
+}
