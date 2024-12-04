@@ -1,138 +1,139 @@
 .inicio2 {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    justify-content: flex-start;
-    padding: 20px;
-  }
-  
-  .fundo2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    object-fit: cover;
-  }
-  
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+}
+
+.fundo2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  object-fit: cover;
+}
+
+.nnsei2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  padding-top: 10%;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  width: 35rem;
+}
+
+.nnsei2 img {
+  width: 35%;
+  object-fit: cover;
+  margin-right: 2rem;
+  border-radius: 8px;
+}
+
+.title2 {
+  color: #754632;
+  font-family: 'Dancing Script', cursive;
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.text-introduction2 {
+  font-size: 1.2rem;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  padding-bottom: 1.5rem;
+  text-align: left;
+}
+
+@media (max-width: 1024px) {
   .nnsei2 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    position: relative;
-    margin-right: 4rem;
-    z-index: 1;
-    padding-top: 10%;
-  }
-  
-  .texts {
-    display: flex;
     flex-direction: column;
-    width: 35rem;
-  }
-  
-  .nnsei2 img {
-    width: 35%;
-    object-fit: cover;
+    padding-top: 5%;
     margin-right: 2rem;
   }
-  
+
+  .texts {
+    width: 30rem;
+  }
+
+  .nnsei2 img {
+    width: 50%;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
   .title2 {
-    color: #754632;
-    font-family: 'Dancing Script', cursive;
-    font-size: 3.5rem;
-    font-weight: 400;
+    font-size: 2.5rem;
+  }
+
+  .text-introduction2 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nnsei2 {
+    flex-direction: column;
+    margin-right: 1rem;
+    padding-top: 5%;
+  }
+
+  .texts {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .nnsei2 img {
+    width: 60%;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .title2 {
+    font-size: 2rem;
+  }
+
+  .text-introduction2 {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nnsei2 {
+    flex-direction: column;
+    padding-top: 5%;
+    text-align: center;
+  }
+
+  .texts {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .nnsei2 img {
+    width: 100%;
     margin-bottom: 1rem;
   }
-  
-  .text-introduction2 {
-    font-size: 1.2rem;
-    font-family: Roboto;
-    font-weight: 300;
-    padding-bottom: 1.5rem;
-    text-align: left;
-  }
-  
-  /* Media Queries para responsividade */
-  @media (max-width: 1024px) {
-    .nnsei2 {
-      flex-direction: column; /* Muda o layout para coluna em telas menores */
-      padding-top: 5%; /* Ajuste do padding para telas menores */
-      margin-right: 2rem;
-    }
-  
-    .texts {
-      width: 30rem; /* Ajuste da largura para telas menores */
-    }
-  
-    .nnsei2 img {
-      width: 50%; /* Aumenta a largura da imagem em telas menores */
-      margin-right: 0; /* Remove a margem direita */
-      margin-bottom: 2rem; /* Adiciona um espaçamento inferior entre a imagem e o texto */
-    }
-  
-    .title2 {
-      font-size: 2.5rem; /* Reduz o tamanho da fonte para telas menores */
-    }
-  
-    .text-introduction2 {
-      font-size: 1rem; /* Reduz o tamanho da fonte do texto */
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .nnsei2 {
-      flex-direction: column; /* Continua o layout em coluna para telas menores */
-      margin-right: 1rem;
-      padding-top: 5%;
-    }
-  
-    .texts {
-      width: 100%; /* Ajusta para usar toda a largura disponível */
-    }
-  
-    .nnsei2 img {
-      width: 60%; /* Aumenta a largura da imagem para telas pequenas */
-      margin-right: 0;
-      margin-bottom: 2rem;
-    }
-  
-    .title2 {
-      font-size: 2rem; /* Ajuste do tamanho da fonte do título */
-    }
-  
-    .text-introduction2 {
-      font-size: 0.9rem; /* Ajuste do tamanho da fonte do texto */
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .nnsei2 {
-      flex-direction: column; /* Muda o layout para coluna em dispositivos muito pequenos */
-      padding-top: 5%;
-    }
-  
-    .texts {
-      width: 100%; /* Usa toda a largura disponível */
-    }
-  
-    .nnsei2 img {
-      width: 100%; /* A imagem ocupará toda a largura disponível */
-      margin-bottom: 1rem; /* Ajuste do espaçamento */
-    }
-  
-    .title2 {
-      font-size: 1.8rem; /* Ajuste do tamanho da fonte do título */
-    }
-  
-    .text-introduction2 {
-      font-size: 0.8rem; /* Ajuste do tamanho da fonte do texto */
-    }
-  }
-  
 
+  .title2 {
+    font-size: 1.8rem;
+  }
+
+  .text-introduction2 {
+    font-size: 0.8rem;
+  }
+}
