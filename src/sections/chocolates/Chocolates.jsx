@@ -1,18 +1,19 @@
 import './Chocolates.scss'
-
+import fundo3 from "../../assets/images/fundo3.png"
 
 import { Swiper, SwiperSlide } from 'swiper/react'; 
 
 
 export default function Chocolate() {
     const minguel = [
-        { id: '1', image: 'https://media.discordapp.net/attachments/1237955320270028890/1313485576384811088/slide2.png?ex=67504e44&is=674efcc4&hm=8f244ddc6659197f8608ab39c92f93f24830d0fface7213d38c2393c0af749a1&=&format=webp&quality=lossless&width=1432&height=457' },
-        { id: '2', image: 'https://media.discordapp.net/attachments/1237955320270028890/1313485576674086922/slide3.png?ex=67504e44&is=674efcc4&hm=f67c6c9d2afc6ab82b435ba27acb1f2c1967a5af54218c3b831356484c56a103&=&format=webp&quality=lossless&width=1432&height=457' },
-        { id: '3', image: 'https://media.discordapp.net/attachments/1237955320270028890/1313485577122742353/slide1.png?ex=67504e44&is=674efcc4&hm=9f8c6c9a56013b9f82f06958656cc23285b64fee0e41456c8f79c59cffffd83b&=&format=webp&quality=lossless&width=1432&height=457' }
+        { id: '1', image: 'https://cdn.discordapp.com/attachments/1237955320270028890/1313485577122742353/slide1.png?ex=67519fc4&is=67504e44&hm=c0b21c5aaca2ead10ede98095a54ba41ab66215d60dbe00934a9cf4229bf2770&' },
+        { id: '2', image: 'https://cdn.discordapp.com/attachments/1237955320270028890/1313485576674086922/slide3.png?ex=67519fc4&is=67504e44&hm=7532b378f638d61dbd630af868ecca0a01101ab52ae2b5596921076a320083c2&' },
+        { id: '3', image: 'https://cdn.discordapp.com/attachments/1237955320270028890/1313485576384811088/slide2.png?ex=67519fc4&is=67504e44&hm=f4922d0af7bccbc3750171f972167da4eec84fa7736ca10a5c74c0657d31241d&' }
     ];
 
     return (
         <div className="cria">
+           <img src={fundo3} alt="fundo" className='fundo3' />
            
             <Swiper
                 slidesPerView={1}  
@@ -25,6 +26,7 @@ export default function Chocolate() {
                     </SwiperSlide>
                 ))}
             </Swiper>
+            
         </div>
     );
 }

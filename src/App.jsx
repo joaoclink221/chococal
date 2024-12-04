@@ -4,36 +4,36 @@ import Header from "./components/Header";
 import Sobre from "./sections/sobre/Sobre";
 import Chocolate from "./sections/chocolates/Chocolates";
 
-
-
-
 const App = () => {
-  const sectionRef = useRef(null);
-  const scrollToSection = () =>
-    sectionRef.current.scrollIntoView({ behavior: "smooth" });
+  const sectionRefInicio = useRef(null);
+  const scrollToInicio = () =>
+    sectionRefInicio.current.scrollIntoView({ behavior: "smooth" });
 
-  const sectionRef2 = useRef(null);
-  const scrollToSection2 = () =>
-    sectionRef2.current.scrollIntoView({ behavior: "smooth" });
+  const sectionRefSobre = useRef(null);
+  const scrollToSobre = () =>
+    sectionRefSobre.current.scrollIntoView({ behavior: "smooth" });
 
+  const sectionRefChocolates = useRef(null);
+  const scrollToChocolates = () =>
+    sectionRefChocolates.current.scrollIntoView({ behavior: "smooth" });
 
   return (
     <div className="landing">
       <Header
-        scrollToInicio={scrollToSection}
-        scrollToSobre={scrollToSection2}
-     
+        scrollToInicio={scrollToInicio}
+        scrollToSobre={scrollToSobre}
+        scrollToChocolates={scrollToChocolates}
       />
-      <div ref={sectionRef}>
+      <div ref={sectionRefInicio}>
         <Inicio />
       </div>
-
-      <div ref={sectionRef2}>
+      <div ref={sectionRefChocolates}>
+        <Chocolate />
+      </div>
+      <div ref={sectionRefSobre}>
         <Sobre />
       </div>
-      <Chocolate/>
     </div>
-
   );
 };
 
