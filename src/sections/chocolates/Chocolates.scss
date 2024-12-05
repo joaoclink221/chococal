@@ -36,6 +36,14 @@
   z-index: 3;
 }
 
+.swiper-pagination-bullet {
+  background-color: white !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: white !important;
+}
+
 .swiper-button-next,
 .swiper-button-prev {
   color: white !important; 
@@ -50,3 +58,4 @@
     bottom: 20px;
   }
 }
+
